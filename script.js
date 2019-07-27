@@ -9,7 +9,7 @@
 let array = ['Кот', 'Собака', 'Жираф'];
 function searchArrayWord(array, world){
     for(let i = 0; i < array.length; i++){
-        if(world == array[i]);
+        if(world == array[i])
         return true;
     }
     return false;
@@ -53,6 +53,16 @@ let obj = {
 console.log(Object.keys(obj));
 
 
+let obj4 = {
+    html: 'HTML', 
+    css: 'CSS', 
+    js: 'ECMA'
+};
+for(let key in obj4){
+    console.log('Ключ:'+  obj4[key]);
+} 
+
+
 /*  5. Создайте объект описывающий Заказ на сайте.
 Создать можно любым из способов - даже просто написать консрукцию var obj = {...}. 
 Главное учесть, что единицы измерения обычно не записываются в объект, а 
@@ -77,25 +87,25 @@ let obj2 = {
     'total sum' : '',
     'total weight' : '',
     'purchased goods' : {
-        1 : {
+        tovar : {
             itemname : 'Чашка',
-            price : '100',
-            weight : '200'
+            price : 100,
+            weight : 200
         },
-        2 : {
+        tovar2 : {
             itemname : 'Ложка',
-            price : '30',
-            weight : '100'
+            price : 30,
+            weight : 100
         },
-        3 : {
+        tovar3 : {
             itemname : 'Чайник',
-            price : '550',
-            weight : '2000'
+            price : 550,
+            weight : 2000
         },
-        4 : {
+        tovar4 : {
             itemname : 'Кружка',
-            price : '150',
-            weight : '400'
+            price : 150,
+            weight : 400
         }
     }
 }
